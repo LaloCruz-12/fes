@@ -3,4 +3,4 @@
 ### Equipo 1 Sistema de prestamo TecnoFES
 #### Integrantes:
 * Miramontes Ramirez Mauricio
-
+* Rivera De Lucio Eduardo
