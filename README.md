@@ -4,5 +4,5 @@
 #### Integrantes:
 * Miramontes Ramirez Mauricio
 * Rivera De Lucio Eduardo
-* Ortix Cruz Miguel Eduardo
+* Ortiz Cruz Eduardo Miguel
 * Reyes Carrillo Ismael
