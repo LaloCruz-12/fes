@@ -1,0 +1,9 @@
+{
+    "name": "tecnofes/spc",
+    "description": "Sistema de prestamos",
+    "type": "project",
+    "license": "GNU3",
+    "require": {
+        "kreait/firebase-php": "^5.14"
+    }
+}
