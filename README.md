@@ -6,3 +6,9 @@
 * Rivera De Lucio Eduardo
 * Ortiz Cruz Eduardo Miguel
 * Reyes Carrillo Ismael
+
+#### Requisitos Desarrollador:
+* PHP 8.0.0^
+* XAMPP Apache Server
+* Composer 2.0.1^
+
