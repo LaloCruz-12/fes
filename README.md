@@ -9,6 +9,10 @@
 * Miranda Hernández Cristóbal
 
 #### Requisitos Desarrollador:
-* PHP 8.0.0^
+* PHP ^7.0.0
 * XAMPP Apache Server
-* Composer 2.0.1^
+* Composer ^2.0.1
+
+## Instalacion
+1. Clonar el repositorio git (git clone)
+2. Usar comando 'composer install' para descargar dependencias

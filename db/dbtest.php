@@ -13,7 +13,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6 mt-4">
             <h3>Insertar datos en la base</h3>
-            <form action="save.php" method="POST">
+            <form action="PostData.php" method="POST">
                 <div class="form-group mb-4">
                     <input type="text" class = 'form-control' name ='Nombre' placeholder='Nombre'>
                 </div>

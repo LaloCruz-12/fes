@@ -11,6 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                 <h1>Index</h1>
                 <?php  
                     if(isset($_SESSION['status']) && $_SESSION['status'] != null){
                       ?>  
@@ -21,7 +22,7 @@
                         <?php
                         unset($_SESSION['status']);
                     }
-                ?>
+                ?> 
             </div>
         </div>
     </div>

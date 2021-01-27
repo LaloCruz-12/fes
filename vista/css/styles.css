@@ -16,7 +16,11 @@ body{
     align-items: center;
 }
 
-
+.CarrouselFlex{
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
 .contenedor{
     
     margin: 4rem auto;
