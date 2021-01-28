@@ -23,4 +23,7 @@
 
 ### Subir datos
 
-1. git push origin master 
+1. git push origin master
+2. git add . 
+3. git commit -m "Mensaje"
+4. git push origin main 
