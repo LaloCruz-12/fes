@@ -22,8 +22,16 @@
 1. git pull origin main
 
 ### Subir datos
-
-1. git push origin master
+1. git pull origin main
 2. git add . 
 3. git commit -m "Mensaje"
 4. git push origin main 
+
+### Conflictos
+1. intentas git pull origin main 
+2. git stash
+3. git pull origin main
+4. git stash pop
+5. Resuelves el conflicto
+6. Subir datos
+
