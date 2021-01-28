@@ -16,3 +16,11 @@
 ## Instalacion
 1. Clonar el repositorio git (git clone)
 2. Usar comando 'composer install' para descargar dependencias
+
+## Git
+### Actualizar repo local
+1. git pull origin main
+
+### Subir datos
+
+1. git push origin master 
