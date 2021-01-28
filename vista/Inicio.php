@@ -11,7 +11,7 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
-  <title></title>
+  <title>Inicio</title>
 </head>
 <?php include 'Header.php'; ?>
 <body>
@@ -29,8 +29,7 @@
             class="d-block" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="https://img.joomcdn.net/742bec75534f89768714c47963ef8362cb7fe076_400_260.jpeg" class="d-block"
-            alt="...">
+          <img src="https://img.joomcdn.net/742bec75534f89768714c47963ef8362cb7fe076_400_260.jpeg" class="d-block" alt="...">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -44,8 +43,6 @@
     </div>
   </div>
 
-
-
 </body>
-<?php include 'Footer.php' ?>
+<?php include 'Footer.php'; ?>
 </html>
