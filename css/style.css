@@ -1,0 +1,66 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+
+}
+
+/*Header*/
+.navbar{
+    background-color:   #1398d5;
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Footer*/
+footer {
+    background-color:#1398d5;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: 6.5rem;
+    color: white;
+}
+
+/*Index*/
+.CarrouselFlex{
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+
+/*Prestamos*/
+.table-scroll
+{
+        height: 380px;
+        overflow-y: auto;
+}
+
+table thead {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: #f0f0f0;
+}
+
+/*Usuarios*/
+.contenedor{
+    margin: 4rem auto;
+}
+
+.controls{
+    width: 100%;
+    padding: 1rem;
+
+}
+.usuarios-main{
+    padding: 2rem;
+}
