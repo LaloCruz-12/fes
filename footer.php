@@ -1,11 +1,11 @@
 
 <footer class=" text-white text-center text-lg-start">
     <!-- Grid container -->
-    <div class="container p-4">
+    <div class="container p-3">
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
           <h5 class="text-uppercase">Contáctanos</h5>
 
           <span>
@@ -22,13 +22,13 @@
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="col-lg-8 col-md-6 mb-4 mb-md-0">
 
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase mb-0">Siguenos</h5>
 
           <ul class="list-unstyled">
@@ -90,7 +90,7 @@
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
       © 2020 Copyright:TecnoFES
       <a class="text-white" href="https://mdbootstrap.com/">Acerca de</a>
     </div>
