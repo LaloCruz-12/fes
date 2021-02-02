@@ -19,7 +19,7 @@
       <table class="table caption-top table-hover">
         <caption>Usuarios
           <button type="button align-right" class="btn btn-success" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
+            data-bs-target="#add_user">
             Añadir Usuario
           </button>
           <button type="button align-right" class="btn btn-danger" data-bs-toggle="modal"
@@ -55,7 +55,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="add_user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
