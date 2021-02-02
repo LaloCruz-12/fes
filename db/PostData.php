@@ -2,9 +2,11 @@
 session_start();
 //Se incluye la estancia de la basa de datos con nombre $database
 include('dbconfig.php');
+use Kreait\Firebase\Database\Transaction;
+
 
 //Se revisa de donde vino la peticion de POST
-if(isset($_POST['save_data']))
+if(isset($_POST['admin_save_user']))
 {
     //Se toman los datos del POST y se juntan en una sola variable
     //------------------------------------------------------------
@@ -14,12 +16,18 @@ if(isset($_POST['save_data']))
     $NumCuenta = $_POST['NumCuenta'];
     $Contraseña = $_POST['Contraseña'];
 
+    if ($_POST['TipoUsuario'] == "Alumno") {
+        $admin = false;
+    }else{
+        $admin = true;
+    }
+
     $data =[
         'Nombre' => $nombre,
         'ApPaterno' => $apPaterno,
         'Carrera' => $carrera,
         'NumCuenta' => $NumCuenta,
-        'admin' => true,
+        'admin' => $admin,
         'baja' => false,
         'contraseña' => $Contraseña
     ];
@@ -36,13 +44,41 @@ if(isset($_POST['save_data']))
     if($postData){
        
         $_SESSION['status'] = 'Data Inserted';
-        header('Location:index.php');
+        header('Location:..\Usuarios.php');
 
     }
     else{
         $_SESSION['status'] = 'Data Not Inserted';
-        header('Location:index.php');
+        header('Location:..\Usuarios.php');
     }
     //-----------------------------------------------------------------------
+
 }
+
+if(isset($_POST['delete_user']))
+{
+    $NumCuenta = $_POST['NumCuenta'];
+  
+    $ref = 'usuarios/'. $NumCuenta;
+
+    $toBeDeleted = $database->getReference($ref);
+    $database->runTransaction(function (Transaction $transaction) use ($toBeDeleted) {
+
+        $transaction->snapshot($toBeDeleted);
+    
+        $transaction->remove($toBeDeleted);
+    });
+
+    if($toBeDeleted){
+       
+        $_SESSION['status'] = 'Data Inserted';
+        header('Location:..\Usuarios.php');
+
+    }
+    else{
+        $_SESSION['status'] = 'Data Not Inserted';
+        header('Location:..\Usuarios.php');
+    }
+}
+
 
