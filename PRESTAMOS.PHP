@@ -17,7 +17,7 @@
               <th>Id_Prestamo</th>
               <th>Hora de inicio</th>
               <th>Hora de entrega</th>
-              <th>01/01/2021</th>
+              <th>Fecha</th>
               <th>Estado</th>
             </tr>
           </thead>
