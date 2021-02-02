@@ -1,5 +1,7 @@
 <?php include('Header.php'); ?>
 
+
+<?php include('db\GetData.php');?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
@@ -19,120 +21,21 @@
               <th>Estado</th>
             </tr>
           </thead>
-          <tbody >
+          <tbody>
+        <!--Por cada usuario dentro del arreglo $usuarios-->
+        <?php foreach ($prestamos as $prestamo) : ?>
+          <!-- Revisamos que el $usuario actual no este vacio por que a veces se vuelve loca la DB-->
+          <?php if (isset($prestamo)):?>
             <tr>
-              <td>0000_1</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>En curso</td>
+              <td><?php echo $prestamo['id_prestamo'];?></td>
+              <td><?php echo $prestamo['h_inicio'];?></td>
+              <td><?php echo $prestamo['h_entrega'];?></td>
+              <td><?php echo $prestamo['fecha'];?></td>
+              <td><?php echo $prestamo['estado'];?></td>
             </tr>
-            <tr>
-              <td>0000_2</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>Finalizado</td>
-            </tr>
-            <tr>
-              <td>0000_3</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>Finalizado</td>
-            </tr>
-            <tr>
-              <td>0000_4</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>En curso</td>
-            </tr>
-            <tr>
-              <td>0000_5</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>Finalizado</td>
-            </tr>
-            <tr>
-              <td>0000_6</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>En curso</td>
-            </tr>
-            <tr>
-              <td>0000_7</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>Finalizado</td>
-            </tr>
-            <tr>
-              <td>0000_8</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>En curso</td>
-            </tr>
-            <tr>
-              <td>0000_9</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>Finalizado</td>
-            </tr>
-            <tr>
-              <td>0001_0</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>En curso</td>
-            </tr>
-            <tr>
-              <td>0001_1</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>Finalizado</td>
-            </tr>
-            <tr>
-              <td>0001_2</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>En curso</td>
-            </tr>
-            <tr>
-              <td>0001_3</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>En curso</td>
-            </tr>
-            <tr>
-              <td>0001_4</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>Finalizado</td>
-            </tr>
-            <tr>
-              <td>0001_5</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>Finalizado</td>
-            </tr>
-            <tr>
-              <td>0001_6</td>
-              <td>12:00</td>
-              <td>14:00</td>
-              <td>01/01/2021</td>
-              <td>En curso</td>
-            </tr>
-          </tbody>
+          <?php endif?>
+        <?php endforeach?>
+        </tbody>
         </table>
       </div>
     </main>
