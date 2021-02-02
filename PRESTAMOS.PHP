@@ -22,9 +22,9 @@
             </tr>
           </thead>
           <tbody>
-        <!--Por cada usuario dentro del arreglo $usuarios-->
+        <!--Por cada prestamo dentro del arreglo $prestamos-->
         <?php foreach ($prestamos as $prestamo) : ?>
-          <!-- Revisamos que el $usuario actual no este vacio por que a veces se vuelve loca la DB-->
+          <!-- Revisamos que el $prestamo actual no este vacio por que a veces se vuelve loca la DB-->
           <?php if (isset($prestamo)):?>
             <tr>
               <td><?php echo $prestamo['id_prestamo'];?></td>
