@@ -13,14 +13,14 @@
             <div class="col-md-12">
                  <h1>Index</h1><?php echo dirname(__FILE__) . '\key\tecnofes-spc-firebase-adminsdk-3o6ct-af4dc76ed1.json'?>
                 <?php  
-                    if(isset($_SESSION['status']) && $_SESSION['status'] != null){
+                    if(isset($_COOKIE['status']) && $_COOKIE['status'] != null){
                       ?>  
                         
                         <div class="alert alert-success" role="alert">
                             <h4 class="alert-heading">Well done!</h4> 
                         </div>
                         <?php
-                        unset($_SESSION['status']);
+                        unset($_COOKIE['status']);
                     }
                 ?> 
             </div>

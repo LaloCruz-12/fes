@@ -104,7 +104,7 @@
                   </select>
                 </div>
                 <button type="button" class="btn btn-secondary ml-1" data-bs-dismiss="modal">Cerrar</button>
-                <button type="submit" name = "admin_save_user"class="btn btn-primary ml-auto">Guardar</button>
+                <button type="submit" name = "admin_save_user" class="btn btn-primary ml-auto">Guardar</button>
             </form>
           </div>
         </div>

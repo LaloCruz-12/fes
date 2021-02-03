@@ -81,8 +81,6 @@ if(isset($_POST['delete_user']))
     }
 }
 
-
-
 //POST de Equipos
 //Se revisa de donde vino la peticion de POST
 if(isset($_POST['admin_save_equip']))
