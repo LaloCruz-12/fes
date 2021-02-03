@@ -19,14 +19,27 @@
         <div class="col-md-12 table-scroll">
           <table class="table caption-top table-hover">
             <caption>Equipos
-              <button type="button align-right" class="btn btn-success" data-bs-toggle="modal"
-                data-bs-target="#addEquipModal">
-                Añadir Equipo
-              </button>
-              <button type="button align-right" class="btn btn-danger" data-bs-toggle="modal"
-                data-bs-target="#deleteEquipModal">
-                Eliminar Equipo
-              </button>
+              <?php if (isset($_COOKIE['TipoUser'])):?>
+                <?php if ($_COOKIE['TipoUser'] == "admin"):?>
+                  <button type="button align-right" class="btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#addEquipModal">
+                    Añadir Equipo
+                  </button>
+                  <button type="button align-right" class="btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#deleteEquipModal">
+                    Eliminar Equipo
+                  </button>
+                <?php elseif($_COOKIE['TipoUser'] == "Alumno"):?>
+                  <button type="button align-right" class="btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#newPrestamo">
+                    Pedir Prestamo
+                  </button>
+                <?php else:?>
+                  <div></div>
+                <?php endif?>
+              <?php else:?>
+                <div></div>
+              <?php endif?>
             </caption>
             <thead>
               <tr>
@@ -62,7 +75,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Añadir Usuario</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Añadir Equipo</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -118,6 +131,42 @@
   </div>
 </div>
 
+<div class="modal fade" id="newPrestamo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pedir Prestamo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="db\PostData.php" method="POST">
+            <div>
+                <label></label>
+                <input class="controls" name="Estado" type="texts" placeholder="Estado">
+            </div>
+            <div>
+                <label ></label>
+                <input class="controls" name ="Marca" type="text" placeholder="Marca">
+            </div>
+            <div>
+                <label ></label>
+                <input class="controls" name="Modelo" type="text" placeholder="Modelo">
+            </div>
+            <div>
+              <label  ></label>
+              <input class="controls" name="NumSerie" type="text" placeholder="Numero de Serie">
+            </div>
+            <div>
+              <label  ></label>
+              <input class="controls" name="Tipo" type="text" placeholder="Tipo">
+            </div><br>
 
+            <button type="button" class="btn btn-secondary ml-1" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" name = "admin_save_equip"class="btn btn-primary ml-auto">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php include 'Footer.php'; ?>

@@ -1,4 +1,4 @@
-<?php include('Header.php'); ?>
+<?php include('header.php'); ?>
 
 <div class="d-flex CarrouselFlex">
 
@@ -25,4 +25,4 @@
   </div>
 </div>
 
-<?php include('Footer.php'); ?>
+<?php include('footer.php'); ?>

@@ -1,4 +1,4 @@
-<?php include('Header.php'); ?>
+<?php include('header.php'); ?>
 <!--  GetData.php nos da las tres variables que podemos usar de la base de datos -->
 <!--  $usuarios contiene un arreglo con la informacion de la coleccion usuarios de la base de datos-->
 <?php include('db\GetData.php');?>
@@ -136,4 +136,4 @@
       </div>
     </div>
 
-<?php include('Footer.php');?>
+<?php include('footer.php');?>
