@@ -157,7 +157,7 @@
             <br>
             <div>
                 <label >Por cuanto tiempo necesitaras el equipo</label>
-                <input class="controls" name ="NumHoras" type="number" placeholder="Marca">
+                <input class="controls" name ="NumHoras" type="number" placeholder="Horas Maximo 3 Horas" min="1" max ="3">
             </div>
             <br>
             <button type="button" class="btn btn-secondary mt-1" data-bs-dismiss="modal">Cerrar</button>

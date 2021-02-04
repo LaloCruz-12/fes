@@ -154,6 +154,7 @@
                 <input type="text" class="form-control form-control-lg" name = "NumCuenta" id="exampleInputUser" placeholder="Numero de cuenta">
               </div>
             </div>
+            <br>
             <div class="row justify-content-center">
               <div class="form-group col-sm-8">
                 <input type="password" name = "password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Contraseña">
