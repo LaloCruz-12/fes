@@ -131,7 +131,7 @@
             <button type="button" class="btn btn-success btn-lg btn-block col-sm-5" data-bs-toggle="modal" data-bs-target="#Iniciar_Sesion"><h4>Iniciar Sesión</h4></button>
           </div><br>
           <div class="row justify-content-center">
-            <button type="button" class="btn btn-success btn-lg btn-block col-sm-5" data-bs-toggle="modal" data-bs-target="#Registrarse"><h4>Registrarse</h4></button>
+            <button type="button" class="btn btn-success btn-lg btn-block col-sm-5" data-bs-toggle="modal" data-bs-target="#reg_user"><h4>Registrarse</h4></button>
           </div><br>
         </div>
       </div>
@@ -173,50 +173,61 @@
 
 
   <!-- Modal de registro-->
-  <div class="modal fade" id="Registrarse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="form-group col-sm-11">
-            <input type="text" class="form-control form-control-lg" id="exampleInputUser" placeholder="Apellido Paterno">
+  <div class="modal fade" id="reg_user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="form-group col-sm-11">
-            <input type="text" class="form-control form-control-lg" id="exampleInputUser" placeholder="Numero de cuenta">
-          </div>
+          <div class="modal-body">
+            <form action="db\PostData.php" method="POST">
+                <div>
+                    <label></label>
+                    <input class="controls" name="Nombre" type="texts" placeholder="Nombre">
+                </div>
+                <div>
+                    <label ></label>
+                    <input class="controls" name ="ApPaterno" type="text" placeholder="Apellido paterno">
+                </div>
 
-          <div class="input-group mb-3">
-            <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Carrera</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-        </div>
+                <div>
 
-        <div class="row justify-content-center">
-          <div class="form-group col-sm-11">
-            <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Contraseña">
-          </div>
-        </div>
+                    <label ></label>
+                    <input class="controls" name="NumCuenta" type="text" placeholder="Número de cuenta">
+                </div>
+                <div>
+                  <label class="controls" >Carrera</label>
+                  <select class="controls" name="Carrera">
 
-        <div class="row justify-content-center">
-          <div class="col-sm-11">
-            <button type="button" class="col-sm-7 btn btn-success" data-dismiss="modal" aria-label="Close"><h4>Iniciar Sesión</h4></button>
-            <button type="button" class="col-sm-4 btn btn-danger" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true"><h4>Salir</h4></span>
-            </button>
+                    <option>ICO</option>
+
+                    <option>Derecho</option>
+
+                  </select>
+                </div>
+                <div>
+                  <label  ></label>
+                  <input class="controls" name="Contraseña"type="password" placeholder="Contraseña">
+                </div>
+
+                <div>
+                  <label class="controls" >Tipo de usuario</label>
+                  <select class="controls" name = "TipoUsuario">
+
+                    <option >Alumno</option>
+
+                    
+
+                  </select>
+                </div>
+                <button type="button" class="btn btn-secondary ml-1" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" name = "save_user" class="btn btn-primary ml-auto">Guardar</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
 <!--Modal de cierre de sesion-->
   <div class="modal fade" id="Cerrar_Session" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
