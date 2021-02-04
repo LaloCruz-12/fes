@@ -269,7 +269,7 @@ if(isset($_POST['fin_prestamo']))
     $updateEquipo = $database->getReference('equipos/'.$id_equipo)->update(['Estado' => "Disponible"]);
     $updatePrestamo = $database->getReference('prestamos/'.$_POST['Id_Prestamo'])->update(['estado' => "Finalizado"]);
 
-    if ($postData) {
+    if ($updatePrestamo) {
         
     
         $_SESSION['status'] = 'Data Inserted';

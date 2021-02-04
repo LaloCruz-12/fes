@@ -1,4 +1,4 @@
-<?php include 'Header.php'; ?>
+<?php include 'header.php'; ?>
 
 <?php include('db\GetData.php');?>
   <br>
@@ -168,4 +168,4 @@
   </div>
 </div>
 
-<?php include 'Footer.php'; ?>
+<?php include 'footer.php'; ?>
