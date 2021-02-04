@@ -1,14 +1,15 @@
-
+<link rel="stylesheet" href="css/style.css">
 <footer class=" text-white text-center text-lg-start">
     <!-- Grid container -->
     <div class="container p-3">
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->
-        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+        <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
           <h5 class="text-uppercase">Contáctanos</h5>
 
           <span>
+          TecnoFES@gmail.com
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="28" height="28"
               viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
               stroke-linejoin="round">
@@ -16,19 +17,19 @@
               <rect x="3" y="5" width="18" height="14" rx="2" />
               <polyline points="3 7 12 13 21 7" />
             </svg>
-            TecnoFES@gmail.com
+            
           </span>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-lg-8 col-md-6 mb-4 mb-md-0">
+        <div class="col-lg-6 col-md-4 mb-4 mb-md-0">
 
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
           <h5 class="text-uppercase mb-0">Siguenos</h5>
 
           <ul class="list-unstyled">

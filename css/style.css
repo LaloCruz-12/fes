@@ -23,9 +23,15 @@ footer {
     background-color:#1398d5;
     bottom: 0;
     width: 100%;
-    position: absolute;
-    height: 6.5rem;
+    
+    
     color: white;
+}
+@media(min-width:768px){
+    footer{
+        position: absolute;
+        
+    }
 }
 
 /*Index*/
