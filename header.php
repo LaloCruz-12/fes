@@ -210,17 +210,6 @@
                   <label  ></label>
                   <input class="controls" name="Contraseña"type="password" placeholder="Contraseña">
                 </div>
-
-                <div>
-                  <label class="controls" >Tipo de usuario</label>
-                  <select class="controls" name = "TipoUsuario">
-
-                    <option >Alumno</option>
-
-                    
-
-                  </select>
-                </div>
                 <button type="button" class="btn btn-secondary ml-1" data-bs-dismiss="modal">Cerrar</button>
                 <button type="submit" name = "save_user" class="btn btn-primary ml-auto">Guardar</button>
             </form>

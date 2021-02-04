@@ -51,15 +51,15 @@
               </tr>
             </thead>
             <tbody>
-              <?php foreach ($equipos as $equipos) : ?>
+              <?php foreach ($equipos as $equipo) : ?>
 
-                <?php if (isset($equipos)): ?>
+                <?php if (isset($equipo)): ?>
                   <tr>
-                  <td><?php echo $equipos['Estado'] ?></td>
-                  <td><?php echo $equipos['Marca'] ?></td>
-                  <td><?php echo $equipos['Modelo'] ?></td>
-                  <td><?php echo $equipos['NumSerie'] ?></td>
-                  <td><?php echo $equipos['Tipo'] ?></td>
+                  <td><?php echo $equipo['Estado'] ?></td>
+                  <td><?php echo $equipo['Marca'] ?></td>
+                  <td><?php echo $equipo['Modelo'] ?></td>
+                  <td><?php echo $equipo['NumSerie'] ?></td>
+                  <td><?php echo $equipo['Tipo'] ?></td>
                   </tr>
                 <?php endif?>
               <?php endforeach ?>
@@ -71,6 +71,9 @@
   </div>
 </div>
 
+<!--------------Modales-------------------->
+
+<!-------------------Modal Añadir Equipo----------------->
 <div class="modal fade" id="addEquipModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -109,6 +112,7 @@
   </div>
 </div>
 
+<!-----------------Modal Eliminar Equipo-------------------->
 <div class="modal fade" id="deleteEquipModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -131,6 +135,7 @@
   </div>
 </div>
 
+<!-----------------Modal de nuevo prestamo---------------------->
 <div class="modal fade" id="newPrestamo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -141,28 +146,22 @@
       <div class="modal-body">
         <form action="db\PostData.php" method="POST">
             <div>
-                <label></label>
-                <input class="controls" name="Estado" type="texts" placeholder="Estado">
+                <label>Introduce el numero de serie del equipo que quieres solicitar</label>
+                <input class="controls" name="NumSerie" type="texts" placeholder="Numero de serie">
             </div>
+            <br>
             <div>
-                <label ></label>
-                <input class="controls" name ="Marca" type="text" placeholder="Marca">
+                <label >Introduzca la hora a la que se recogeria el equipo</label>
+                <input class="controls" name ="Hora" type="time" placeholder="Marca">
             </div>
+            <br>
             <div>
-                <label ></label>
-                <input class="controls" name="Modelo" type="text" placeholder="Modelo">
+                <label >Por cuanto tiempo necesitaras el equipo</label>
+                <input class="controls" name ="NumHoras" type="number" placeholder="Marca">
             </div>
-            <div>
-              <label  ></label>
-              <input class="controls" name="NumSerie" type="text" placeholder="Numero de Serie">
-            </div>
-            <div>
-              <label  ></label>
-              <input class="controls" name="Tipo" type="text" placeholder="Tipo">
-            </div><br>
-
-            <button type="button" class="btn btn-secondary ml-1" data-bs-dismiss="modal">Cerrar</button>
-            <button type="submit" name = "admin_save_equip"class="btn btn-primary ml-auto">Guardar</button>
+            <br>
+            <button type="button" class="btn btn-secondary mt-1" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" name = "new_prestamo"class="btn btn-primary ml-auto">Guardar</button>
         </form>
       </div>
     </div>
