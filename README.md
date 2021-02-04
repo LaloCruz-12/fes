@@ -9,7 +9,7 @@
 * Miranda Hernández Cristóbal
 
 #### Requisitos Desarrollador:
-* PHP ^7.0.0
+* PHP ^7.4.0
 * XAMPP Apache Server
 * Composer ^2.0.1
 
